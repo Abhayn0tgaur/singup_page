@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form with Inline Styles and Validation</title>
+</head>
+<body style="font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f0f0f0;">
+
+  <div style="padding: 20px; border: 1px solid #ccc; border-radius: 8px; background-color: #fff; max-width: 300px; width: 100%;">
+    <h2 style="text-align: center;">Signup Form</h2>
+    <form id="signupForm" action="/submit" method="POST" style="display: flex; flex-direction: column;">
+      <label for="name" style="margin-bottom: 5px;">Name:</label>
+      <input type="text" id="name" name="name" style="padding: 8px; margin-bottom: 10px;" required>
+
+      <label for="email" style="margin-bottom: 5px;">Email:</label>
+      <input type="email" id="email" name="email" style="padding: 8px; margin-bottom: 10px;" required>
+
+      <label for="password" style="margin-bottom: 5px;">Password:</label>
+      <input type="password" id="password" name="password" style="padding: 8px; margin-bottom: 10px;" required>
+
+      <button type="submit" style="padding: 10px; background-color: #28a745; color: #fff; border: none; cursor: pointer;">Submit</button>
+      <p id="message" style="color: red; text-align: center; margin-top: 10px;"></p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
